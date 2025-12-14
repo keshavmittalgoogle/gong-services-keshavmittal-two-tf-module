@@ -1,0 +1,66 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: gong-services-keshavmittal-two-tf-module-template-files-display
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Google Cloud Private Datalab‎ Template Files
+    source:
+      repo: https://github.com/keshavmittalgoogle/gong-services-keshavmittal-two-tf-module.git
+      sourceType: git
+      dir: /modules/template_files
+  ui:
+    input:
+      variables:
+        append_to_startup_script:
+          name: append_to_startup_script
+          title: Append To Startup Script
+        cloud_config:
+          name: cloud_config
+          title: Cloud Config
+        datalab_console_log_level:
+          name: datalab_console_log_level
+          title: Datalab Console Log Level
+        datalab_disk_name:
+          name: datalab_disk_name
+          title: Datalab Disk Name
+        datalab_docker_image:
+          name: datalab_docker_image
+          title: Datalab Docker Image
+        datalab_enable_backup:
+          name: datalab_enable_backup
+          title: Datalab Enable Backup
+        datalab_enable_swap:
+          name: datalab_enable_swap
+          title: Datalab Enable Swap
+        datalab_idle_timeout:
+          name: datalab_idle_timeout
+          title: Datalab Idle Timeout
+        datalab_user_email:
+          name: datalab_user_email
+          title: Datalab User Email
+        fluentd_docker_image:
+          name: fluentd_docker_image
+          title: Fluentd Docker Image
+        gpu_count:
+          name: gpu_count
+          title: Gpu Count
+        gpu_device_map:
+          name: gpu_device_map
+          title: Gpu Device Map
